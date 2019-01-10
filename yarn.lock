@@ -2525,10 +2525,22 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-ndx@^0.6.0:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/ndx/-/ndx-0.4.1.tgz#6c1c8a82b9d1fc40bc9ebab270140f6898bea84d"
-  integrity sha512-iXpb4uQmgBxqiPtO1PojXxYoTJyC0TmeFE20VTkGYakiihnO84atCLiRZQmzYW3UqzFL8FaXPMGOJDm276tjUA==
+ndx-dev-commons@^1.0.0-beta.0:
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/ndx-dev-commons/-/ndx-dev-commons-1.0.0-beta.0.tgz#0187eedd63bb5a3e21c89475d8f07fd093cbf474"
+  integrity sha512-DTTwsCIZTFFL97jbUhABLI6zCON48VBp0k/6FiHlSUXhiJD+ups8t8lOl6Pyh/YEvsM79jCnZSOWRYvXgVuVwg==
+
+ndx-index@^1.0.0-beta.0:
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/ndx-index/-/ndx-index-1.0.0-beta.0.tgz#e8ce7d09f8ded409440b974d221a3ede6dd9de3b"
+  integrity sha512-85MgqUzNTqsE1jquV9doV0Oe7T28y1Parrh0Fu0LquhHtScMq2dluTePPKXhFxkthLUA5rN29B2G10DXeo6qLQ==
+  dependencies:
+    ndx "^1.0.0-beta.1"
+
+ndx@^1.0.0-beta.1:
+  version "1.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/ndx/-/ndx-1.0.0-beta.1.tgz#6f02c94d61b04346e0496c780370a809b50b8486"
+  integrity sha512-tf11QnNxrfRDvQjhCgPpmXeleqr4EXTNbZepTWtiNKGjmxjyIf7lwaZNdFgWl6q2uO/NBMhTsdoNKgpGuYL90w==
 
 needle@^2.2.1:
   version "2.2.4"
