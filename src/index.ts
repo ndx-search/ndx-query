@@ -1,48 +1,13 @@
 import { Index, InvertedIndexNode, DocumentPointer, findInvertedIndexNode } from "ndx";
 
 /**
- * Creates a {@link DocumentIndex} query function.
- *
- * @param index {@link DocumentIndex}.
- * @param fieldsBoost Fields boost factors.
- * @param bm25k1 BM25 ranking function constant `k1`, controls non-linear term frequency normalization (saturation).
- * @param bm25b BM25 ranking function constant `b`, controls to what degree document length normalizes tf values.
- * @param tokenizer Tokenizer is a function that breaks a text into words, phrases, symbols, or other meaningful
- *  elements called tokens.
- * @param filter Filter is a function that processes tokens and returns terms, terms are used in Inverted Index to index
- *  documents.
- * @param removed Set of removed document ids.
- * @returns Query function.
- */
-export function createQueryFunction<I>(
-  index: Index<I>,
-  fieldsBoost: number[],
-  bm25k1: number,
-  bm25b: number,
-  tokenizer: (s: string) => string[],
-  filter: (s: string) => string,
-  removed?: Set<I>,
-): (s: string) => QueryResult<I>[] {
-  return (s: string) => query(
-    index,
-    fieldsBoost,
-    bm25k1,
-    bm25b,
-    tokenizer,
-    filter,
-    removed,
-    s,
-  );
-}
-
-/**
  * Query Result.
  */
 export interface QueryResult<I> {
   /**
    * Document id.
    */
-  readonly id: I;
+  readonly docId: I;
   /**
    * Result score.
    */
@@ -54,6 +19,7 @@ export interface QueryResult<I> {
  *
  * All token separators work as a disjunction operator.
  *
+ * @typeparam I Document ID type.
  * @param index {@link DocumentIndex}.
  * @param fieldsBoost Fields boost factors.
  * @param bm25k1 BM25 ranking function constant `k1`, controls non-linear term frequency normalization (saturation).
@@ -97,7 +63,6 @@ export function query<I>(
 
           while (pointer !== null) {
             if (removed !== void 0 && removed.has(pointer.details.id)) {
-              removed.delete(pointer.details.id);
               if (prevPointer === null) {
                 termNode.firstPosting = pointer.next;
               } else {
@@ -149,8 +114,8 @@ export function query<I>(
   }
 
   const result = [] as QueryResult<I>[];
-  scores.forEach((score, id) => {
-    result.push({ id, score });
+  scores.forEach((score, docId) => {
+    result.push({ docId, score });
   });
   result.sort((a, b) => b.score - a.score);
 
@@ -160,6 +125,7 @@ export function query<I>(
 /**
  * Expands term with all possible combinations.
  *
+ * @typeparam I Document ID type.
  * @param index {@link DocumentIndex}
  * @param term Term.
  * @returns All terms that starts with `term` string.
@@ -174,6 +140,14 @@ export function expandTerm<I>(index: Index<I>, term: string): string[] {
   return results;
 }
 
+/**
+ * Recursively goes through inverted index nodes and expands term with all possible combinations.
+ *
+ * @typeparam I Document ID type.
+ * @param index {@link Index}
+ * @param results Results.
+ * @param term Term.
+ */
 function _expandTerm<I>(node: InvertedIndexNode<I>, results: string[], term: string): void {
   if (node.firstPosting !== null) {
     results.push(term);
