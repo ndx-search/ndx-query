@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should automatically try to expand terms 1`] = `
+Array [
+  Object {
+    "docId": 1,
+    "score": 0.12637567304702957,
+  },
+]
+`;
+
+exports[`should return document 1 1`] = `
+Array [
+  Object {
+    "docId": 1,
+    "score": 0.6931471805599453,
+  },
+]
+`;
+
+exports[`should return document 1 and 2 1`] = `
+Array [
+  Object {
+    "docId": 2,
+    "score": 0.1823215567939546,
+  },
+  Object {
+    "docId": 1,
+    "score": 0.1823215567939546,
+  },
+]
+`;
+
+exports[`should use token separator as disjunction operator 1`] = `
+Array [
+  Object {
+    "docId": 1,
+    "score": 0.6931471805599453,
+  },
+  Object {
+    "docId": 2,
+    "score": 0.6931471805599453,
+  },
+]
+`;
