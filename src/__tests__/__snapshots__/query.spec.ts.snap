@@ -3,7 +3,7 @@
 exports[`should automatically try to expand terms 1`] = `
 Array [
   Object {
-    "docId": 1,
+    "key": 1,
     "score": 0.12637567304702957,
   },
 ]
@@ -12,7 +12,7 @@ Array [
 exports[`should return document 1 1`] = `
 Array [
   Object {
-    "docId": 1,
+    "key": 1,
     "score": 0.6931471805599453,
   },
 ]
@@ -21,11 +21,11 @@ Array [
 exports[`should return document 1 and 2 1`] = `
 Array [
   Object {
-    "docId": 2,
+    "key": 2,
     "score": 0.1823215567939546,
   },
   Object {
-    "docId": 1,
+    "key": 1,
     "score": 0.1823215567939546,
   },
 ]
@@ -34,11 +34,11 @@ Array [
 exports[`should use token separator as disjunction operator 1`] = `
 Array [
   Object {
-    "docId": 1,
+    "key": 1,
     "score": 0.6931471805599453,
   },
   Object {
-    "docId": 2,
+    "key": 2,
     "score": 0.6931471805599453,
   },
 ]

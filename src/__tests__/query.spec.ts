@@ -1,5 +1,4 @@
-import { createIndex } from "ndx";
-import { addDocumentToIndex, removeDocumentFromIndex } from "ndx-index";
+import { createIndex, addDocumentToIndex, removeDocumentFromIndex } from "ndx";
 import { query } from "..";
 
 const tokenizer = (s: string) => s.split(" ");
