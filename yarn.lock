@@ -52,9 +52,9 @@ acorn-walk@^6.0.1:
   integrity sha512-OtUw6JUTgxA2QoqqmrmQ7F2NYqiBPi/L2jqHyFtllhOUvXYQXf0Z1CYUinIfyT4bTCGmrA7gX9FvHA81uzCoVw==
 
 acorn@^5.5.3:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
-  integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 acorn@^6.0.1:
   version "6.0.5"
@@ -2530,10 +2530,10 @@ ndx-dev-commons@^1.0.0:
   resolved "https://registry.yarnpkg.com/ndx-dev-commons/-/ndx-dev-commons-1.0.0.tgz#b20ec9f8a9076e23a097a98e0a95d038b866fa81"
   integrity sha512-Woe7o/xhZsdihFQZhx85U5nCyQpdXkpJSPqXqIiQdSisj+hQfR/uw5Pkg3MouJrto7oRMJJu0C2AeYnhjmbt6Q==
 
-ndx@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ndx/-/ndx-1.0.1.tgz#16d82c00da21811806b2f53cffcf139e9a573e1a"
-  integrity sha512-TPILZ5j/O3zIg8wu1mwY38N7FE4lnn0JfP5vAkcjlr7m4kpD8WcMriWd24mf4kvWAflzHFjGqD3UWZSye7CHsA==
+ndx@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ndx/-/ndx-1.0.2.tgz#d0b5332a0121a27b4c0af4d3cf451b0bc81612b8"
+  integrity sha512-/TbqqemJ80lGKRoRuXsz7VgA0erkIxilCUbkMfRL1h2VBGBLGvQnI+FdHvWDqJnUhgOP/T9+SYeWS84wbXGBFA==
 
 needle@^2.2.1:
   version "2.2.4"
