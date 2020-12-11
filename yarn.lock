@@ -1473,9 +1473,9 @@ inherits@2, inherits@~2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@~1.3.0:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.7.tgz#a09363e1911972ea16d7a8851005d84cf09a9a84"
+  integrity sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG/d7kRLKRFc9oDMsH+mFQ==
 
 invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
@@ -2530,10 +2530,10 @@ ndx-dev-commons@^1.0.0:
   resolved "https://registry.yarnpkg.com/ndx-dev-commons/-/ndx-dev-commons-1.0.0.tgz#b20ec9f8a9076e23a097a98e0a95d038b866fa81"
   integrity sha512-Woe7o/xhZsdihFQZhx85U5nCyQpdXkpJSPqXqIiQdSisj+hQfR/uw5Pkg3MouJrto7oRMJJu0C2AeYnhjmbt6Q==
 
-ndx@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ndx/-/ndx-1.0.1.tgz#16d82c00da21811806b2f53cffcf139e9a573e1a"
-  integrity sha512-TPILZ5j/O3zIg8wu1mwY38N7FE4lnn0JfP5vAkcjlr7m4kpD8WcMriWd24mf4kvWAflzHFjGqD3UWZSye7CHsA==
+ndx@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ndx/-/ndx-1.0.2.tgz#d0b5332a0121a27b4c0af4d3cf451b0bc81612b8"
+  integrity sha512-/TbqqemJ80lGKRoRuXsz7VgA0erkIxilCUbkMfRL1h2VBGBLGvQnI+FdHvWDqJnUhgOP/T9+SYeWS84wbXGBFA==
 
 needle@^2.2.1:
   version "2.2.4"
