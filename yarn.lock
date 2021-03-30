@@ -2530,10 +2530,10 @@ ndx-dev-commons@^1.0.0:
   resolved "https://registry.yarnpkg.com/ndx-dev-commons/-/ndx-dev-commons-1.0.0.tgz#b20ec9f8a9076e23a097a98e0a95d038b866fa81"
   integrity sha512-Woe7o/xhZsdihFQZhx85U5nCyQpdXkpJSPqXqIiQdSisj+hQfR/uw5Pkg3MouJrto7oRMJJu0C2AeYnhjmbt6Q==
 
-ndx@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ndx/-/ndx-1.0.1.tgz#16d82c00da21811806b2f53cffcf139e9a573e1a"
-  integrity sha512-TPILZ5j/O3zIg8wu1mwY38N7FE4lnn0JfP5vAkcjlr7m4kpD8WcMriWd24mf4kvWAflzHFjGqD3UWZSye7CHsA==
+ndx@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ndx/-/ndx-1.0.2.tgz#d0b5332a0121a27b4c0af4d3cf451b0bc81612b8"
+  integrity sha512-/TbqqemJ80lGKRoRuXsz7VgA0erkIxilCUbkMfRL1h2VBGBLGvQnI+FdHvWDqJnUhgOP/T9+SYeWS84wbXGBFA==
 
 needle@^2.2.1:
   version "2.2.4"
@@ -3913,9 +3913,9 @@ xml-name-validator@^3.0.0:
   integrity sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw==
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 yallist@^2.1.2:
   version "2.1.2"
